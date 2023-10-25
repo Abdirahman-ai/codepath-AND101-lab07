@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="More Fonts..."
+        android:text="@string/codezen"
+        android:textAlignment="center"
+        android:textColor="#EF476F"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mainQuote"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/amiko"
+        android:text="@string/a_quote_in_20sp_and_073b4c_with_8dp_padding_n_n_rest_and_be_kind_you_don_t_have_to_prove_anything_n_jack_kerouac"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.Quote"
+        app:layout_constraintEnd_toEndOf="@+id/banner"
+        app:layout_constraintStart_toStartOf="@+id/banner"
+        app:layout_constraintTop_toBottomOf="@+id/banner"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/secondQuote"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/homemade_apple"
+        android:text="@string/there_are_only_two_ways_to_live_your_life_one_is_as_if_nothing_is_a_miracle_the_other_is_as_if_everything_is_a_miracle_n_albert_einstein"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.Quote"
+        app:layout_constraintEnd_toEndOf="@+id/mainQuote"
+        app:layout_constraintStart_toStartOf="@+id/mainQuote"
+        app:layout_constraintTop_toBottomOf="@+id/mainQuote"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="@+id/heading"
+        app:layout_constraintStart_toStartOf="@+id/heading"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        tools:ignore="ImageContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
